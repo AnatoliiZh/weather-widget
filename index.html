@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="widget">
+        <div class="wrap-city-img">
+          <div class="wrap-city">
+            <div>City</div>
+            <input id="city" type="text" value="kyiv" />
+            <!-- <button id="btn">Search</button> -->
+          </div>
+        </div>
+        <img
+          class="icon"
+          id="icon"
+          src="https://openweathermap.org/img/w/01d.png"
+          alt=""
+        />
+        <div class="wrap-temp">
+          <div class="temp" id="temp">0°</div>
+          <div class="description" id="description">cloud</div>
+        </div>
+        <div class="wrap-pres">
+          <div class="pressure" id="pressure">0 Pa</div>
+          <div class="humidity" id="humidity">0 %</div>
+        </div>
+        <div class="wrap-wind">
+          <div class="speed" id="speed">0 m/s</div>
+          <img class="arrow" src="arrow_up.png" alt="" />
+          <div class="deg" id="deg">0 deg</div>
+        </div>
+
+        <!-- temp - температура
+  pressure - тиск
+  description - опис
+  humidity - вологість
+  speed - швидкість вітру
+  deg - напрям в градусах
+  icon - іконка, де 10d код іконки -->
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
